@@ -33,4 +33,14 @@ public class Acquario {
         return s += "lunghezza: "+this.dimensioni[0]+", larghezza: "+this.dimensioni[1]+", altezza: "+this.dimensioni[2];
     }
 
+    public Pesce readPesce(int pos){
+        Pesce p = null;
+        if(pos>=0){
+            p = this.pesci[pos];
+        }
+        return p;
+    }
+
+    
+
 }
