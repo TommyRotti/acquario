@@ -35,12 +35,21 @@ public class Acquario {
 
     public Pesce readPesce(int pos){
         Pesce p = null;
-        if(pos>=0){
+        if(pos>=0 && pos<this.pesci.length){
             p = this.pesci[pos];
         }
         return p;
     }
 
-    
+    public boolean removePesce(int pos){
+        boolean b = false;
+        if(pos>=0 && pos<this.pesci.length){
+            b = true;
+            this.pesci[pos] = null;
+        }
+        return b;
+    }
+
+
 
 }
