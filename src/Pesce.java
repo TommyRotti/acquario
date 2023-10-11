@@ -18,5 +18,14 @@ public class Pesce {
         Pesce newPesce = new Pesce(this.vita, this.colore, this.specie);
         return newPesce;
     }
+
+    public String toString(){
+        String rit = "{\n";
+        rit += "pesce vivo: "+this.vita+"\n";
+        rit += "colore: "+this.colore+"\n";
+        rit += "specie: "+this.specie+"\n";
+        rit += "}";
+        return rit;
+    }
     
 }
