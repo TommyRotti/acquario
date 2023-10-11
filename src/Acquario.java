@@ -5,10 +5,14 @@ public class Acquario {
 
     public Acquario(int[] dim, int dimArray){
         this.pesci = new Pesce[dimArray];
-        for(int i=0; i<dim.length; i++){
-            if(dim[i]>0){
-              this.dimensioni[i] = dim[i];
+        if(dim.length==3){
+            for(int i=0; i<dim.length; i++){
+                if(dim[i]>0){
+                    this.dimensioni[i] = dim[i];
+                }
             }
+        }else{
+            String s = "Inserisci solo 3 dimensioni";
         }
     }
 
@@ -23,5 +27,7 @@ public class Acquario {
             this.pesci[i] = pesci[i].clone();
         }
     }
+
+    
 
 }
