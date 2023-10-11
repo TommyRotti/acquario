@@ -8,5 +8,10 @@ public class Main {
         Pesce[] pTot = {p, p1};
         Acquario a = new Acquario(d, pTot);
         System.out.println(a.toString());
+        System.out.printf(a.getDimensioni());
+        System.out.println(a.readPesce(1));
+        System.out.println(a.removePesce(1));
+        Pesce p2 = new Pesce(true, "ROSSO", "PAGLIACCIOpirla");
+        System.out.println(a.addPesce(p2));
     }
 }
