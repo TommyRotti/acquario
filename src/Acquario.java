@@ -5,6 +5,7 @@ public class Acquario {
 
     public Acquario(int[] dim, int dimArray){
         this.pesci = new Pesce[dimArray];
+        this.dimensioni = new int[dim.length];
         if(dim.length==3){
             for(int i=0; i<dim.length; i++){
                 if(dim[i]>0){
@@ -18,6 +19,7 @@ public class Acquario {
 
     public Acquario(int[] dim, Pesce[] pesci){
         this.pesci = new Pesce[pesci.length];
+        this.dimensioni = new int[dim.length];
         for(int i=0; i<dim.length; i++){
             if(dim[i]>0){
                 this.dimensioni[i] = dim[i];
@@ -80,5 +82,4 @@ public class Acquario {
         rit += "}";
         return rit;
     }
-
 }
