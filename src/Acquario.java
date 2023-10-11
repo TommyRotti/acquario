@@ -63,6 +63,11 @@ public class Acquario {
         return b;
     }
 
+    public Acquario clone() {
+        Acquario newAc = new Acquario(this.dimensioni, this.pesci);
+        return newAc;
+    }
+
     
 
 }
