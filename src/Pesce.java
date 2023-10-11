@@ -13,5 +13,10 @@ public class Pesce {
             this.specie = specie;
         }
     }
+
+    public Pesce clone(){
+        Pesce newPesce = new Pesce(this.vita, this.colore, this.specie);
+        return newPesce;
+    }
     
 }
