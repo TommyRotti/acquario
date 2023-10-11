@@ -11,7 +11,9 @@ public class Main {
         System.out.printf(a.getDimensioni());
         System.out.println(a.readPesce(1));
         System.out.println(a.removePesce(1));
+        System.out.println(a.readPesce(1));
         Pesce p2 = new Pesce(true, "ROSSO", "PAGLIACCIOpirla");
         System.out.println(a.addPesce(p2));
+        System.out.println(a.toString());
     }
 }

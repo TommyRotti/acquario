@@ -37,8 +37,10 @@ public class Acquario {
 
     public Pesce readPesce(int pos){
         Pesce p = null;
-        if(pos>=0 && pos<this.pesci.length){
+        if((pos>=0 && pos<this.pesci.length) && this.pesci[pos]!=null){
             p = this.pesci[pos].clone();
+        }else{
+            p = null;
         }
         return p;
     }
@@ -76,7 +78,7 @@ public class Acquario {
         rit += "[\n";
         rit += "Pesci:\n";
         for(int i=0; i<this.pesci.length; i++){
-            rit += this.pesci[i].clone();
+            rit += this.pesci[i];
         }
         rit += "]\n";
         rit += "}";
