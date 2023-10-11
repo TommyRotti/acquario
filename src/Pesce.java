@@ -18,6 +18,14 @@ public class Pesce {
         return this.vita;
     }
 
+    public String getColore(){
+        return this.colore;
+    }
+
+    public String getSpecie(){
+        return this.specie;
+    }
+
     public Pesce clone(){
         Pesce newPesce = new Pesce(this.vita, this.colore, this.specie);
         return newPesce;
