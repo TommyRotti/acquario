@@ -12,7 +12,7 @@ public class Acquario {
                 }
             }
         }else{
-            String s = "Inserisci solo 3 dimensioni";
+            String s = "Inserisci solo 3 dimensioni (lunghezza, larghezza, altezza)";
         }
     }
 
@@ -28,6 +28,9 @@ public class Acquario {
         }
     }
 
-    
+    public String getDimensioni(){
+        String s = "";
+        return s += "lunghezza: "+this.dimensioni[0]+", larghezza: "+this.dimensioni[1]+", altezza: "+this.dimensioni[2];
+    }
 
 }
