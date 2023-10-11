@@ -50,6 +50,19 @@ public class Acquario {
         return b;
     }
 
+    public boolean addPesce(Pesce pesce){
+        boolean b = false;
+        int i=0;
+        while(this.pesci[i]!=null || i<this.pesci.length){
+            i++;
+        }
+        if(this.pesci[i]==null && i<this.pesci.length){
+            this.pesci[i] = pesce.clone();
+            b = true;
+        }
+        return b;
+    }
 
+    
 
 }
