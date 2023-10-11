@@ -36,7 +36,7 @@ public class Acquario {
     public Pesce readPesce(int pos){
         Pesce p = null;
         if(pos>=0 && pos<this.pesci.length){
-            p = this.pesci[pos];
+            p = this.pesci[pos].clone();
         }
         return p;
     }
@@ -68,6 +68,17 @@ public class Acquario {
         return newAc;
     }
 
-    
+    public String toString(){
+        String rit = "{\n";
+        rit += "dimensioni acquario: "+this.getDimensioni()+"\n";
+        rit += "[\n";
+        rit += "Pesci:\n";
+        for(int i=0; i<this.pesci.length; i++){
+            rit += this.pesci[i].clone();
+        }
+        rit += "]\n";
+        rit += "}";
+        return rit;
+    }
 
 }
